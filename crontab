@@ -1,5 +1,5 @@
 # min   hour    day     month   weekday command
-0       *       *       *       *       rsnapshot hourly
-0       2       *       *       *       rsnapshot daily
-0       3       *       *       6       rsnapshot weekly
-0       5       1       *       *       rsnapshot monthly
+0	*	*	*	*	rsnapshot hourly
+0	2	*	*	*	rsnapshot daily
+0	3	*	*	6	rsnapshot weekly
+0	5	1	*	*	rsnapshot monthly
