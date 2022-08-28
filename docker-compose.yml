@@ -2,13 +2,13 @@ version: '3.8'
 
 services:
   rsnapshot:
-    image: rsnapshot-alpine:0.0.1
+    image: rsnapshot-alpine:1.0.0
     container_name: rsnapshot
     build:
       context: ./build
       dockerfile: ./Dockerfile
     volumes:
       - "./rsnapshot.conf:/etc/rsnapshot.conf"
-      - "./crontab:/var/spool/cron/crontabs/root"
+      - "./crontab:/crontab:ro"
       #- "<your_snapshot_root_here>:/snapshots"
       #- "<your_backup_data_here>:/data"
