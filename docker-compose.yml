@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   rsnapshot:
-    image: rsnapshot-alpine:1.0.0
+    image: wertbon1789/rsnapshot-alpine:1.0.0
     container_name: rsnapshot
     build:
       context: ./build
