@@ -1,6 +1,5 @@
 #!/bin/ash
-mkdir -p /var/spool/cron/crontab
-cp /crontab /var/spool/cron/crontab/root
-chown root:root /var/spool/cron/crontab/root
+cp /crontab /var/spool/cron/crontabs/root
+chown root:root /var/spool/cron/crontabs/root
 
 crond -f -l 0 -L /dev/stdout
