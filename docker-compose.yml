@@ -9,3 +9,5 @@ services:
       dockerfile: ./Dockerfile
     volumes:
       - "./rsnapshot.conf:/etc/rsnapshot.conf"
+      #- "<your_snapshot_root_here>:/snapshots"
+      #- "<your_backup_data_here>:/data"
