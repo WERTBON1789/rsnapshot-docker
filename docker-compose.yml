@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  rsnapshot:
+    image: rsnapshot-alpine:0.0.1
+    build:
+      context: ./build
+      dockerfile: ./Dockerfile
