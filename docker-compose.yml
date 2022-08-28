@@ -7,3 +7,5 @@ services:
     build:
       context: ./build
       dockerfile: ./Dockerfile
+    volumes:
+      - "./rsnapshot.conf:/etc/rsnapshot.conf"
